@@ -1,11 +1,19 @@
 <template>
   <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    <WeatherInformation/>
   </nav>
   <router-view/>
 </template>
 
+<script>
+  import WeatherInformation from './components/WeatherInformation.vue';
+  export default {
+    name: 'App',
+    components: {
+      WeatherInformation,
+    }
+  }
+</script>
 <style lang="scss">
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
